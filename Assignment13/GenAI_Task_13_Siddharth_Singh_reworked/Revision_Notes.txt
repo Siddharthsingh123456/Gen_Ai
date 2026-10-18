@@ -1,0 +1,37 @@
+# Assignment 13 - Revision Notes
+
+I was asked to rework this assignment because the previous version looked
+too polished and did not show enough understanding.
+
+## Changes made
+
+- Simplified the Python structure.
+- Used straightforward Pandas operations.
+- Kept CSV, JSON, SQL, API, cleaning and EDA sections separate.
+- Added the exact Kaggle source.
+- Added comments explaining basic operations.
+- Kept the EDA plots simple.
+
+## Concepts I need to understand
+
+1. `pd.read_csv()`
+2. `pd.read_json()`
+3. `pd.read_sql_query()`
+4. `isnull().sum()`
+5. `drop_duplicates()`
+6. `fillna()`
+7. `median()`
+8. `mode()`
+9. `get_dummies()`
+10. `map()`
+11. Histogram and KDE
+12. Count plot
+13. Box plot
+14. Scatter plot
+15. Correlation heatmap
+
+## Important
+
+The revision record describes real changes. I should not claim that I made
+mistakes that I did not actually make. Before submission I should run the
+code myself and understand the output.
