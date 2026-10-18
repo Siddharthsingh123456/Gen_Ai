@@ -1,0 +1,14 @@
+langchain>=0.3
+langchain-core>=0.3
+langchain-community>=0.3
+langchain-text-splitters>=0.3
+langchain-astradb>=0.5
+astrapy>=1.5
+langchain-huggingface>=0.1
+sentence-transformers>=3.0
+langchain-openai>=0.1
+langchain-groq>=0.1
+langchain-ollama>=0.1
+pypdf>=4.0
+streamlit>=1.35
+python-dotenv>=1.0

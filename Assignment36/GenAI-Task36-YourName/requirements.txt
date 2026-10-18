@@ -1,0 +1,9 @@
+langchain>=0.3
+langchain-core>=0.3
+langchain-huggingface>=0.1
+transformers>=4.40
+torch>=2.1
+accelerate>=0.30
+sentencepiece>=0.2
+huggingface_hub>=0.23
+python-dotenv>=1.0
