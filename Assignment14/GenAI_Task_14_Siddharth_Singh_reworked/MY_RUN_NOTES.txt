@@ -1,0 +1,39 @@
+# My Own Run Notes - Assignment 14
+
+Fill this after running the program yourself.
+
+Date I ran the program:
+____________________________
+
+1. What was the shape of the dataset?
+My answer:
+____________________________
+
+2. What two new features did I create?
+My answer:
+____________________________
+
+3. Why did I not use writing score inside total_score?
+My answer:
+____________________________
+
+4. What does OneHotEncoder do?
+My answer:
+____________________________
+
+5. What is the difference between StandardScaler and MinMaxScaler?
+My answer:
+____________________________
+
+6. What happened when I ran the pipeline?
+My answer:
+____________________________
+
+7. Did I get any error? If yes, write the actual error here:
+____________________________
+
+8. How did I fix the actual error?
+____________________________
+
+9. One thing I learned:
+____________________________

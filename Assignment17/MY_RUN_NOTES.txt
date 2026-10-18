@@ -1,0 +1,33 @@
+MY_RUN_NOTES.txt
+===================
+
+Assignment 17: Text Cleaning, Preprocessing & NLP Pipeline
+
+What I actually ran:
+- I used 30 movie-review text samples.
+- Dataset shape during this assignment: (30, 2)
+- The Python file was executed successfully with exit code 0.
+- The result file contains 30 processed rows.
+- The final result contains the columns needed for the separate preprocessing stages.
+
+Actual observations from this run:
+1. The raw reviews contain normal English text plus punctuation and mixed formatting.
+2. The original-to-cleaned comparison is visible in the notebook and in the saved CSV.
+3. Basic cleaning makes the text more consistent by changing case and removing punctuation, numbers and repeated spaces.
+4. Advanced cleaning removes URL/email/HTML patterns when they are present.
+5. The stopword stage makes the text shorter by removing common words.
+6. The repeated-character example changed "soooo good" to "soo good".
+7. The slang example changed "u r gr8 btw" to "you are great by the way".
+8. The average raw text length in the 30-row run was 1150.93 characters.
+9. The average final cleaned-text length was 822.97 characters.
+10. The final pipeline is shorter because several noisy or common tokens are removed before lemmatization.
+
+Debugging / environment observation:
+- NLTK's stopwords, punkt and WordNet data were not installed in the execution environment.
+- The first check therefore raised NLTK LookupError messages.
+- Internet access was unavailable, so the corpora could not be downloaded in this environment.
+- I kept the NLTK PorterStemmer and WordNetLemmatizer imports and added small fallbacks so the complete assignment could still be executed and inspected.
+- This is an environment limitation, not a claim that the NLTK resources are unnecessary.
+
+Personal reflection:
+Before submitting, I should add my own short paragraph about what I personally understood from the run and, if I ran it on my computer, the real error and fix I experienced. I should not invent a debugging story just to make the notes look authentic.
