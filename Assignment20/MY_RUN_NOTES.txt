@@ -1,0 +1,56 @@
+MY_RUN_NOTES.txt
+================
+
+Assignment: 20 – Building & Deploying a Recommendation System
+
+Dataset:
+- Name: TMDB 5000 Movie Dataset
+- Kaggle source: https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata
+- Included file: data/tmdb_5000_movies_sample.csv
+- Included sample records: 30
+- The project also includes download_kaggle_dataset.py for downloading the complete Kaggle dataset.
+
+Task 1 actual inspection:
+- Shape of included executable sample: (30, 5)
+- Column names: ['title', 'overview', 'genres', 'keywords', 'text']
+- First five rows were exported to tests/first_5_rows.csv.
+
+Task 3:
+- TF-IDF matrix shape: (30, 775)
+- Vocabulary size: 775
+- ngram_range: (1, 2)
+
+Task 4:
+- Cosine similarity matrix shape: (30, 30)
+
+Task 5/9 actual tests:
+          input_movie                          title  similarity_score
+               Avatar                   Man of Steel            0.1029
+               Avatar     X-Men: Days of Future Past            0.0989
+               Avatar                   Interstellar            0.0851
+               Avatar Transformers: Dark of the Moon            0.0826
+               Avatar        Guardians of the Galaxy            0.0649
+The Dark Knight Rises                  Batman Begins            0.3380
+The Dark Knight Rises                        Spectre            0.0428
+The Dark Knight Rises       The Fast and the Furious            0.0412
+The Dark Knight Rises                        Skyfall            0.0387
+The Dark Knight Rises                   Interstellar            0.0363
+         Interstellar                    The Martian            0.1417
+         Interstellar                      Star Wars            0.1069
+         Interstellar                         Avatar            0.0851
+         Interstellar Transformers: Dark of the Moon            0.0824
+         Interstellar                 The Terminator            0.0739
+
+Observation:
+- The previous 0.000-score problem came from a tiny test file with unrelated text. This corrected project uses real movie metadata fields (overview, genres and keywords), so related movies receive non-zero similarity scores.
+- Three different input movies were tested.
+- Recommendations are sorted by cosine similarity.
+- The included sample is executable locally. For the exact full Kaggle submission, run download_kaggle_dataset.py and replace the sample CSV with the complete Kaggle CSV.
+
+GitHub:
+- Project is GitHub-ready with README, requirements.txt and .gitignore.
+- A GitHub URL is not invented here because a repository cannot be created without the student's GitHub account/authorization.
+
+Render:
+- Procfile and Streamlit start command are included.
+- A real Render URL is not invented here because deployment requires the student's Render account and repository connection.

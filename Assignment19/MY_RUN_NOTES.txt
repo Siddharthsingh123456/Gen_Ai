@@ -1,0 +1,47 @@
+MY_RUN_NOTES.txt
+===================
+
+Assignment: A20 - Word2Vec Text Embeddings
+
+Dataset:
+- File: data/custom_word2vec_corpus.csv
+- Original sentences: 43
+- Source: Custom educational corpus created for this assignment.
+- The corpus contains movie-review and royal-family sentences. The royal sentences include king, queen, man and woman so the required analogy can be tested.
+
+Actual execution:
+- The Jupyter notebook was executed successfully from start to finish.
+- Training sentences after repeating the small corpus: 1290
+- CBOW vocabulary size: 93
+- Skip-Gram vocabulary size: 93
+- Embedding dimension: 100
+- PCA and t-SNE plots were generated.
+
+Actual similarity results:
+        pair     CBOW  Skip-Gram
+good - great 0.320992   0.413686
+movie - film 0.588768   0.550421
+king - queen 0.940616   0.687985
+
+Actual analogy results:
+    model                                                                                                                                                        top_results
+     CBOW   [('queen', 0.8111465573310852), ('princess', 0.4688794016838074), ('prince', 0.3611115515232086), ('during', 0.354320228099823), ('royal', 0.31687426567077637)]
+Skip-Gram [('princess', 0.5007455945014954), ('queen', 0.37662264704704285), ('during', 0.3736782670021057), ('kindness', 0.371645450592041), ('times', 0.3602325916290283)]
+
+Execution observations:
+1. The model produced 100-number vectors for individual words.
+2. CBOW and Skip-Gram both produced similar contextual words, but their rankings were not exactly the same.
+3. The three similarity pairs were calculated directly rather than only described.
+4. The required king - man + woman operation was executed for both models.
+5. PCA and t-SNE reduced the 100-dimensional vectors to 2D.
+6. Related royal terms and movie/review terms formed visible groups in the visualization. Because this is a small custom corpus, these groups are only a demonstration.
+7. Repeating the small corpus gives more training examples but does not add new information.
+
+Debugging/verification:
+- I checked the required NLP libraries before training.
+- I made sure the required analogy words were present in the vocabulary.
+- The notebook was re-run after creation and completed without an execution error.
+- The final notebook contains outputs from the executed cells.
+
+Personal reflection:
+The results above are factual execution observations. Add your own short reflection before submission describing what you personally learned from CBOW, Skip-Gram, similarity, analogy and the plots. Do not invent a debugging event you did not actually experience.

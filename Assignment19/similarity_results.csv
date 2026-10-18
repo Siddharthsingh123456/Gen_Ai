@@ -1,0 +1,4 @@
+pair,CBOW,Skip-Gram
+good - great,0.32099184,0.41368648
+movie - film,0.58876806,0.55042106
+king - queen,0.9406163,0.68798476

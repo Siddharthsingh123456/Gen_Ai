@@ -1,0 +1,22 @@
+Assignment 20 checklist
+
+[✓] Pandas dataset loading
+[✓] Dataset shape printed
+[✓] Column names printed
+[✓] First 5 rows printed/exported
+[✓] Text cleaning
+[✓] TF-IDF vectorization
+[✓] Cosine similarity
+[✓] build recommendation function
+[✓] At least 3 movie tests
+[✓] Non-zero recommendation scores
+[✓] Streamlit interface
+[✓] requirements.txt
+[✓] Procfile
+[✓] README
+[✓] MY_RUN_NOTES
+[✓] GitHub-ready structure
+[✓] Render-ready configuration
+[!] GitHub URL must be added after creating/pushing the student's repository
+[!] Render URL must be added after deployment from the student's Render account
+[!] Complete Kaggle CSV can be downloaded with download_kaggle_dataset.py
