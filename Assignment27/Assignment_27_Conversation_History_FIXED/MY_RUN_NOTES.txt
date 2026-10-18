@@ -1,0 +1,101 @@
+Assignment 27 - My Run Notes
+
+Name: ______________________
+Date: ______________________
+
+These notes must be completed after REAL local execution.
+
+1. Environment
+Command:
+ollama --version
+
+Actual output:
+[PASTE YOUR REAL OUTPUT HERE]
+
+Command:
+ollama list
+
+Actual output:
+[PASTE YOUR REAL OUTPUT HERE]
+
+Model used:
+[REAL MODEL NAME]
+
+2. Task 1 understanding
+SystemMessage:
+[WRITE IN YOUR OWN WORDS]
+
+HumanMessage:
+[WRITE IN YOUR OWN WORDS]
+
+AIMessage:
+[WRITE IN YOUR OWN WORDS]
+
+Why are message-based prompts useful?
+[WRITE YOUR OWN OBSERVATION]
+
+3. Follow-up test
+
+Question 1:
+Explain Python lists in simple words.
+
+Actual response:
+[PASTE REAL RESPONSE]
+
+Question 2:
+Give me one example.
+
+Actual response:
+[PASTE REAL RESPONSE]
+
+Did the second question use the first question's context?
+[YES/NO + WHY]
+
+Question 3:
+What about tuples?
+
+Actual response:
+[PASTE REAL RESPONSE]
+
+Did the chatbot understand the follow-up?
+[YES/NO + WHY]
+
+4. History trimming
+
+Messages before trimming:
+[REAL NUMBER]
+
+Messages after max_messages=4:
+[REAL NUMBER]
+
+Approximate token-limited messages:
+[REAL NUMBER]
+
+5. Token limit test
+
+What happened when the history became large?
+[YOUR REAL OBSERVATION]
+
+6. Streamlit test
+
+Command:
+streamlit run app.py
+
+Actual result:
+[WRITE WHAT REALLY HAPPENED]
+
+Screenshot:
+outputs/streamlit_chatbot.png
+
+7. Debugging
+
+Actual error:
+[REAL ERROR OR "NO ERROR"]
+
+How I fixed it:
+[REAL FIX]
+
+8. What I learned
+
+[WRITE 5-8 SENTENCES IN YOUR OWN WORDS ABOUT MESSAGE HISTORY,
+PLACEHOLDERS, TRIMMING, FOLLOW-UP QUESTIONS AND PERFORMANCE.]

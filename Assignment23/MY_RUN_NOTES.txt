@@ -1,0 +1,95 @@
+Assignment 23 - MY_RUN_NOTES
+
+IMPORTANT:
+Fill these notes after running the project on your own computer.
+Do not invent API responses, transcript text, retrieval results, or scores.
+
+1. Environment
+Python version:
+Operating system:
+Command used:
+Installation result:
+
+2. OpenAI Basic Prompt
+Model used:
+Prompt:
+What did the model answer?
+Any error:
+
+3. Wikipedia Retriever
+Query:
+Number of documents returned:
+What did the first result contain?
+Any error:
+
+4. Vector Store Retriever
+Embedding model:
+Number of documents stored:
+Query:
+Top retrieved result:
+Observation:
+
+5. MMR Retriever
+Query:
+Normal similarity results:
+MMR results:
+Did MMR provide more variety?
+Observation:
+
+6. Multi-Query Retriever
+Original query:
+Number of returned documents:
+Did alternative query wording improve retrieval?
+Observation:
+
+7. Contextual Compression
+Number of documents before compression:
+Number after compression:
+What information was removed or shortened?
+Observation:
+
+8. YouTube
+Video URL:
+Video title:
+Number of transcript documents:
+Number of chunks:
+Chunk size:
+Chunk overlap:
+Any transcript error:
+
+9. YouTube Vector Store
+Embedding model:
+Vector store:
+Top retrieved chunk:
+Observation:
+
+10. RAG Chatbot Testing
+
+Question 1:
+Answer summary:
+Was it supported by the transcript?
+
+Question 2:
+Answer summary:
+Was it supported by the transcript?
+
+Question 3:
+Answer summary:
+Was it supported by the transcript?
+
+Question 4:
+Answer summary:
+Was it supported by the transcript?
+
+Question 5:
+Answer summary:
+Was it supported by the transcript?
+
+11. Final observations
+- Difference between retriever-based RAG and normal prompting:
+- Why vector stores are important:
+- When MMR is useful:
+- Benefit of multi-query retrieval:
+- Importance of contextual compression:
+- One problem I encountered:
+- How I fixed/debugged it:

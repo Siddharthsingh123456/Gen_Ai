@@ -1,0 +1,21 @@
+Vector Databases and Embeddings
+
+An embedding is a list of numbers that represents the meaning of a piece of text. Texts with similar meaning have embeddings that are close together in vector space, even when they use different words. For example, the sentences how do I reset my password and I forgot my login credentials produce nearby vectors. Embeddings are created by embedding models such as OpenAI text-embedding models or open source sentence-transformers models like all-MiniLM-L6-v2, which can run locally on a laptop.
+
+What is a vector database
+A vector database stores embeddings together with the original text and metadata, and it can quickly find the nearest vectors to a query vector. This operation is called similarity search or nearest neighbour search. Searching millions of vectors by brute force is slow, so vector databases build special index structures that trade a small amount of accuracy for a large gain in speed.
+
+FAISS
+FAISS stands for Facebook AI Similarity Search. It is a library for efficient similarity search and clustering of dense vectors. FAISS runs in memory, can be saved to and loaded from disk, and supports both exact search and approximate indexes. It is a popular choice for prototypes and small to medium projects because it needs no separate server.
+
+ChromaDB
+ChromaDB is an open source vector database designed for AI applications. It offers a simple Python API, automatic persistence to disk, and metadata filtering. Like FAISS, it integrates directly with LangChain as a vector store and can be converted into a retriever.
+
+Similarity metrics
+The most common similarity metrics are cosine similarity, which compares the angle between two vectors, and Euclidean distance, which compares the straight line distance. When embeddings are normalised, cosine similarity and inner product give the same ranking.
+
+Choosing chunk size
+Chunk size affects retrieval quality. Small chunks of about 200 to 300 characters give precise matches but may lack surrounding context. Large chunks of 1000 characters or more keep context but may mix several topics, which weakens the match. Many projects start with around 500 characters and an overlap of 50 to 100 characters, then tune based on test questions.
+
+Keeping the index fresh
+When documents change, the index must be rebuilt or updated. Small projects simply re-ingest all files. Larger systems track document versions and update only the chunks that changed.

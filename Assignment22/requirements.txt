@@ -1,0 +1,13 @@
+numpy
+openai
+sentence-transformers
+langchain
+langchain-core
+langchain-community
+langchain-openai
+langchain-ollama
+langchain-chroma
+faiss-cpu
+chromadb
+jupyter
+nbformat

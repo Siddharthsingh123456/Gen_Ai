@@ -1,0 +1,18 @@
+Retrieval-Augmented Generation (RAG) Overview
+
+Retrieval-Augmented Generation, usually shortened to RAG, is a technique that combines a large language model with an external knowledge source. Instead of relying only on what the model memorised during training, a RAG system first retrieves relevant passages from a document collection and then asks the model to answer using those passages as context. This makes answers more accurate, more up to date, and easier to verify.
+
+Why RAG is needed
+Large language models have a fixed training cutoff and cannot see private company documents. They can also hallucinate, which means they produce fluent but incorrect statements. RAG reduces hallucination because the model is instructed to answer only from the retrieved context. If the context does not contain the answer, a well designed RAG assistant says that it does not know instead of inventing a response.
+
+The RAG pipeline
+A typical RAG pipeline has two phases. The first is the indexing phase. Documents such as PDFs, reports, and text files are loaded and split into smaller chunks. Each chunk is converted into a numeric vector called an embedding and stored in a vector database. The second is the query phase. When a user asks a question, the question is embedded with the same model, the vector database returns the most similar chunks, and these chunks are inserted into a prompt together with the question. The language model then writes the final answer.
+
+The retrieval step
+The retrieval step is the heart of RAG. The retriever measures how close the question embedding is to every stored chunk embedding, usually with cosine similarity or inner product, and returns the top k results. A small k keeps the prompt short and cheap, while a larger k increases the chance that the answer is included. Good retrieval depends on good chunking. Chunks that are too small lose context, and chunks that are too large add noise and cost.
+
+Grounding and citations
+Grounding means that every claim in the answer can be traced back to a retrieved passage. Many RAG applications show the source file or page next to the answer so the user can verify it. Grounding is the main safety feature of RAG, because it limits the model to the supplied evidence.
+
+Limitations of basic RAG
+Basic RAG treats every question independently. If a user asks a follow-up such as explain more or what about the previous point, the retriever receives a vague question with no subject and often returns irrelevant chunks. Conversational RAG solves this by using the chat history to rewrite follow-up questions into complete standalone questions before retrieval, and by passing the history to the prompt so the model understands the dialogue.

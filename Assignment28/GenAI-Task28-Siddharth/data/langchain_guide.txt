@@ -1,0 +1,21 @@
+LangChain Guide for Building LLM Applications
+
+LangChain is an open source framework that helps developers build applications powered by language models. It provides standard interfaces for chat models, embedding models, vector stores, retrievers, prompt templates, and output parsers, so that components can be swapped without rewriting the application.
+
+Document loaders
+Document loaders read data from files and return a list of Document objects. Each Document has page_content, which is the text, and metadata, such as the source file name or page number. TextLoader reads plain text files. PyPDFLoader reads PDF files and creates one Document per page.
+
+Text splitters
+Long documents must be split into chunks before embedding. RecursiveCharacterTextSplitter is the recommended splitter for generic text. It tries to split on paragraph breaks first, then on line breaks, then on spaces, so chunks stay as semantically complete as possible. Two parameters control its behaviour. The chunk_size parameter sets the maximum chunk length, and the chunk_overlap parameter sets how many characters are repeated between neighbouring chunks. Overlap helps preserve meaning that would otherwise be cut at a chunk boundary.
+
+Prompt templates and message history
+ChatPromptTemplate builds a list of chat messages from a template. A typical conversational template has three parts: a system message with instructions, a MessagesPlaceholder that is filled with previous messages, and a human message with the current question. MessagesPlaceholder is what lets the model see earlier turns of the conversation without manual string formatting.
+
+LangChain Expression Language
+LangChain Expression Language, or LCEL, lets developers compose components with the pipe operator. A simple chain looks like prompt, then model, then output parser. Every component in an LCEL chain is a Runnable, which means it supports invoke, batch, and stream methods in the same way.
+
+Managing long conversations
+Chat history grows with every turn, and every extra message costs tokens and latency. The trim_messages utility removes old messages when a limit is exceeded. It can count messages or tokens, can keep the latest messages with the last strategy, and can make sure the history starts with a human message so the conversation remains valid for the model.
+
+Retrievers
+A retriever is an interface that takes a text query and returns relevant documents. Any vector store can be turned into a retriever with the as_retriever method. The search_kwargs argument controls settings such as the number of results k.

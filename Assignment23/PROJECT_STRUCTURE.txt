@@ -1,0 +1,13 @@
+Assignment_23_OpenAI_RAG/
+├── main.py
+├── app.py
+├── Assignment_23.ipynb
+├── requirements.txt
+├── README.md
+├── MY_RUN_NOTES.txt
+├── .env.example
+├── PROJECT_STRUCTURE.txt
+├── data/
+│   └── README.txt
+└── output/
+    └── (created during execution)

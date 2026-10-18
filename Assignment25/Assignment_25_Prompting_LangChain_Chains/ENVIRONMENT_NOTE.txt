@@ -1,0 +1,4 @@
+The package does not fabricate OpenAI model responses or RAG results.
+Those results require the student's own OPENAI_API_KEY and execution environment.
+
+Run the project locally and save the genuine output in the notebook and MY_RUN_NOTES.txt.

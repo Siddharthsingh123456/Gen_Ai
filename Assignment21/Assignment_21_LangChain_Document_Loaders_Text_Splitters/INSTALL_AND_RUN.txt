@@ -1,0 +1,26 @@
+ASSIGNMENT 21 - INSTALL AND RUN
+
+1. Open a terminal in this folder.
+
+2. Create a virtual environment:
+   python -m venv .venv
+
+3. Activate it on Windows:
+   .venv\Scripts\activate
+
+4. Install:
+   python -m pip install --upgrade pip
+   python -m pip install -r requirements.txt
+
+5. Run:
+   python main.py
+
+6. Open:
+   Assignment_21.ipynb
+
+7. Run every notebook cell. Jupyter will then store the actual outputs.
+
+8. Update MY_RUN_NOTES.txt with your real observations.
+
+If Task 5 fails with a network/proxy/SSL error, do not replace it with fake output.
+Record the real error and explain the environment restriction.

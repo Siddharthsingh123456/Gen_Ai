@@ -1,0 +1,60 @@
+MY RUN NOTES — Assignment 26
+==============================
+
+Date:
+Python version:
+OS:
+
+TASK 1 — Groq setup
+- Did the Groq package install?
+- Did the API call work?
+- What model did I use?
+- What response did I receive?
+
+TASK 2 — Chatbot
+- Test question 1:
+- Response:
+- Test question 2:
+- Response:
+- Test question 3:
+- Response:
+
+TASK 3 — RAG
+- Did the documents load?
+- Number of chunks:
+- Retrieved context:
+- RAG answer:
+
+TASK 4 — RAG prompt
+- How did the system instruction restrict the answer?
+
+TASK 5/6 — FastAPI
+- Did uvicorn start?
+- What happened at /docs?
+- POST /chat request:
+- POST /chat response:
+
+TASK 7 — API testing
+- Browser/Swagger/Postman used:
+- Actual status code:
+
+TASK 8 — Production readiness
+- Environment variable check:
+- Validation test:
+- Error-handling test:
+
+TASK 9 — End-to-end
+- Question 1 and actual response:
+- Question 2 and actual response:
+- Question 3 and actual response:
+
+TASK 10 — My observations
+1.
+2.
+3.
+
+DEBUGGING
+Write one genuine error you encountered and explain what you changed to fix it.
+
+IMPORTANT:
+Do not invent API responses, status codes, deployment results, or timings.

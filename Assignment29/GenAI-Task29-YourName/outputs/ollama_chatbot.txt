@@ -1,0 +1,4 @@
+SCREENSHOT EVIDENCE
+
+Run the Streamlit application with Ollama and save a real screenshot here as:
+ollama_chatbot.png

@@ -1,0 +1,4 @@
+SCREENSHOT EVIDENCE
+
+Run the Streamlit application with OpenAI and save a real screenshot here as:
+openai_chatbot.png

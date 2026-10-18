@@ -1,0 +1,58 @@
+MY RUN NOTES — Assignment 21
+=============================
+
+Fill this file after running the project yourself.
+
+Date:
+Python version:
+
+1. Task 1:
+What number of documents did TextLoader return?
+What metadata did you see?
+
+2. Task 2:
+How many CSV rows became documents?
+Write one row that you observed.
+
+3. Task 3:
+How many PDF pages loaded?
+What text did you see in the preview?
+
+4. Task 4:
+How many files were loaded from the directory?
+
+5. Task 5:
+Did WebBaseLoader work on your machine?
+If yes, write the first part of the output.
+If no, write the actual error and explain that network access was the reason.
+
+6. Task 6:
+In your own words, why can't we pass an unlimited document directly to an LLM?
+
+7. Task 7:
+How many CharacterTextSplitter chunks did you get?
+
+8. Task 8:
+What difference did you notice between character and recursive splitting?
+
+9. Task 9:
+Which headers appeared in the metadata?
+
+10. Task 10:
+Did SemanticChunker import successfully? What did you learn about semantic splitting?
+
+11. Task 11:
+How many chunks were returned for the local directory?
+Did the URL test work?
+
+12. Task 12:
+Write your own best splitter recommendation for:
+- plain text
+- PDFs
+- Markdown
+- web pages
+
+Debugging notes:
+Write one real problem you faced while running the assignment and how you fixed it.
+
+Do not invent results. Replace this template with your actual observations after running.

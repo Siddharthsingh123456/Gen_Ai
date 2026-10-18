@@ -1,0 +1,18 @@
+Groq and Fast LLM Inference
+
+Groq is an AI infrastructure company that built a custom chip called the Language Processing Unit, or LPU, designed specifically for running large language models. Unlike general purpose GPUs, which were originally built for graphics and training, the LPU is built only for inference, which means generating answers from an already trained model. This focus allows Groq to deliver extremely high token generation speed and very low latency.
+
+Why the LPU is fast
+The LPU uses a deterministic design. The compiler schedules every operation and every data movement ahead of time, so the hardware never has to wait for unpredictable memory access or runtime scheduling decisions. The chip also keeps model weights in large on-chip SRAM memory instead of fetching them repeatedly from external memory. Together these choices remove the main sources of delay in token generation and give consistent response times, which matters for real-time applications such as chatbots and voice assistants.
+
+Time to first token and throughput
+Two numbers describe LLM speed. Time to first token is how long the user waits before the first word appears, and throughput is how many tokens per second are generated after that. Groq is known for very low time to first token and for throughput of several hundred tokens per second on popular open models. When responses are streamed, users see text appear almost instantly, which makes an application feel responsive.
+
+Models available on Groq
+Groq does not train its own foundation models. It hosts open-weight models such as Llama 3.3 70B Versatile and Llama 3.1 8B Instant. The 70B model gives stronger reasoning and accuracy, while the 8B model is faster and cheaper and suits simple real-time tasks. Both support a context window of about 128 thousand tokens.
+
+Using Groq with LangChain
+The langchain-groq package provides the ChatGroq class. Developers create it with a model name and an API key, which is normally read from the GROQ_API_KEY environment variable so that secrets are never hard coded. ChatGroq behaves like any other LangChain chat model, so it can be used in prompt templates, retrieval chains and message history without changing the rest of the code. Groq does not provide an embedding model, so applications use another provider such as HuggingFace or OpenAI for embeddings.
+
+Rate limits
+Free accounts have limits on requests per minute and tokens per day. If an application sends too many requests it receives a rate limit error, so production applications should catch errors and retry or show a friendly message.

@@ -1,0 +1,54 @@
+Assignment 22 - MY_RUN_NOTES
+
+Before final submission, run the project locally and replace/add observations
+below with the actual output from your machine.
+
+1. Environment
+Command used: python -m pip install -r requirements.txt
+Installation result:
+
+2. OpenAI
+Model:
+Number of chunks:
+Vector dimensions:
+Observed embedding generation time:
+First 10 embedding values:
+
+3. Hugging Face
+Model:
+Vector dimensions:
+Observed generation time:
+Comparison with OpenAI:
+
+4. Similarity Search
+Query 1:
+Top result:
+Score:
+
+Query 2:
+Top result:
+Score:
+
+Query 3:
+Top result:
+Score:
+
+5. Ollama
+Model:
+Was Ollama running?
+Vector dimensions:
+Result:
+
+6. FAISS
+Was the index created?
+Was it saved and reloaded successfully?
+Top retrieved result:
+
+7. ChromaDB
+Collection:
+Persistent directory:
+Top retrieved result:
+
+8. Final observations
+Write 2-4 observations based on the actual results.
+Do not invent values or results.

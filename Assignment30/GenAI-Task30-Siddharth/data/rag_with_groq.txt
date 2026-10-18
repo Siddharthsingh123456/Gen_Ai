@@ -1,0 +1,18 @@
+Building a RAG Application
+
+Retrieval-Augmented Generation connects a language model to your own documents. The application loads files, splits them into chunks, converts the chunks to embeddings, stores them in a vector database and, for every question, retrieves the most similar chunks and gives them to the model as context. Because the model answers from the supplied context, answers are grounded in the documents and hallucination is reduced.
+
+Document loading and splitting
+LangChain offers loaders such as PyPDFLoader for PDF files and TextLoader for plain text files. Long texts must be split before embedding. RecursiveCharacterTextSplitter splits on paragraphs, then lines, then words, so chunks keep their meaning. The chunk_size parameter controls the maximum chunk length and chunk_overlap controls how much text is shared between neighbouring chunks, which prevents sentences from losing meaning at the boundaries.
+
+Vector stores
+FAISS is a fast library for similarity search that runs in memory and needs no server, so it is ideal for apps where users upload documents during a session. ChromaDB is another popular option that can persist data to disk. A retriever created from the vector store returns the top k chunks for a question.
+
+Grounded prompts
+The prompt template should contain a system message that injects the retrieved context and tells the model to answer only from that context. When the answer is missing, the assistant should say that it does not know. This instruction is the main protection against made up answers.
+
+OpenAI RAG compared with Groq RAG
+The RAG architecture is identical in both cases. The difference is the generation step. A RAG app using OpenAI calls a proprietary hosted model such as GPT, which offers strong general capability and a wide ecosystem. A RAG app using Groq calls an open-weight model such as Llama on specialised LPU hardware, which offers much lower latency and generally lower cost, but the choice of models is smaller. Because LangChain uses a common chat model interface, switching between the two only requires changing the model class.
+
+Handling conversations
+Follow-up questions such as explain more or what about the previous point depend on earlier messages. A conversational RAG app keeps the chat history, rewrites follow-ups into standalone questions for retrieval and passes the history to the prompt. History should be trimmed to the most recent messages to control cost and latency.
