@@ -163,6 +163,10 @@ It checks Python source syntax and the JSON structure of Jupyter notebooks. It d
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the contribution checklist.
 
+## Repository improvement plan
+
+The repository is being upgraded in phases so that original assignment work and working project behavior are preserved. See the [quality roadmap](docs/QUALITY_ROADMAP.md) for the audit checklist and [assignment README template](templates/ASSIGNMENT_README_TEMPLATE.md) for consistent project documentation.
+
 ## Current scope and limitations
 
 This repository is a learning portfolio, not one unified production application. Each assignment may have different dependencies, API requirements, maturity, and deployment instructions. Review the individual project before using it.
