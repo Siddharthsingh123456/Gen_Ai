@@ -1,0 +1,30 @@
+# My Run Notes - Assignment 15
+
+Do this after running the Python file yourself.
+
+Date:
+________________________
+
+1. What was the Linear Regression RMSE?
+________________________
+
+2. Which K gave the highest printed test accuracy?
+________________________
+
+3. What did the confusion matrix look like?
+________________________
+
+4. What happened with K = 1 compared with K = 25?
+________________________
+
+5. Did I get an error while running the code?
+________________________
+
+If yes, write the actual error:
+________________________
+
+How I fixed it:
+________________________
+
+6. One concept I understood better:
+________________________

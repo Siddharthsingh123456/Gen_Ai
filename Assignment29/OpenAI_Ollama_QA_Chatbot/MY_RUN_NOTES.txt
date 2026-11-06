@@ -1,0 +1,41 @@
+Assignment 29 - My Run Notes
+
+IMPORTANT:
+Do not submit invented execution results. Fill this file after running the project.
+
+Date:
+Machine:
+
+Task 1/2:
+- OpenAI model used:
+- Ollama model used:
+- What happened:
+
+Task 3:
+- Questions tested:
+- Follow-up question:
+- Did the history work?:
+
+Task 7:
+- get_answer() tested with:
+- openai result:
+- ollama result:
+
+Task 8:
+- Streamlit tested:
+- Model switching tested:
+- Screenshot files created:
+
+Errors I actually got:
+1.
+2.
+
+How I fixed them:
+1.
+2.
+
+My observations:
+- OpenAI response quality:
+- Ollama response quality:
+- Speed difference:
+- Cost/privacy observation:

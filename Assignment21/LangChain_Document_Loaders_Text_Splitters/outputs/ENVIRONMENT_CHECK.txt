@@ -1,0 +1,3 @@
+This package-building environment does not have langchain installed.
+No fake 'REAL LANGCHAIN' execution output was generated.
+Install requirements.txt locally, then run main.py and the notebook to capture genuine LangChain output.

@@ -1,0 +1,13 @@
+LangChain Document Loaders and Text Splitters
+
+LangChain helps applications work with documents before retrieval and generation.
+A document loader reads information from a source and turns it into Document objects.
+Text splitters divide long documents into smaller chunks.
+
+Chunk size controls the approximate amount of text in each chunk.
+Chunk overlap keeps some text from the previous chunk so that context is not lost.
+This is useful when an important sentence crosses a chunk boundary.
+
+Common sources include text files, CSV files, PDFs, directories and web pages.
+Different sources may need different loaders, but the final goal is the same:
+prepare useful document chunks for later retrieval.

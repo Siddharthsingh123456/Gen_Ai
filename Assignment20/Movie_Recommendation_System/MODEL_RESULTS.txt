@@ -1,0 +1,21 @@
+Dataset sample shape: (30, 5)
+Columns: ['title', 'overview', 'genres', 'keywords', 'text']
+TF-IDF matrix shape: (30, 775)
+Vocabulary size: 775
+
+          input_movie                          title  similarity_score
+               Avatar                   Man of Steel            0.1029
+               Avatar     X-Men: Days of Future Past            0.0989
+               Avatar                   Interstellar            0.0851
+               Avatar Transformers: Dark of the Moon            0.0826
+               Avatar        Guardians of the Galaxy            0.0649
+The Dark Knight Rises                  Batman Begins            0.3380
+The Dark Knight Rises                        Spectre            0.0428
+The Dark Knight Rises       The Fast and the Furious            0.0412
+The Dark Knight Rises                        Skyfall            0.0387
+The Dark Knight Rises                   Interstellar            0.0363
+         Interstellar                    The Martian            0.1417
+         Interstellar                      Star Wars            0.1069
+         Interstellar                         Avatar            0.0851
+         Interstellar Transformers: Dark of the Moon            0.0824
+         Interstellar                 The Terminator            0.0739

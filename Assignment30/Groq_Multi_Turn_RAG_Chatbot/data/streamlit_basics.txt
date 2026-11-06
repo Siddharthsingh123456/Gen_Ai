@@ -1,0 +1,18 @@
+Streamlit for Rapid GenAI Prototyping
+
+Streamlit is an open source Python framework for building interactive web applications with only Python code. A developer writes a normal script and Streamlit turns it into a web app, with no HTML, CSS or JavaScript required. This makes it extremely popular for prototyping machine learning and generative AI demos, because an idea can become a shareable interface in minutes.
+
+Execution model
+Streamlit reruns the whole script from top to bottom every time the user interacts with a widget. Because of this, ordinary Python variables are reset on every run. To keep information between runs, such as the chat messages or a loaded vector store, developers use st.session_state, which is a dictionary-like object that persists for the duration of the user session.
+
+Chat interface elements
+Streamlit includes elements made for chatbots. The st.chat_input widget shows a message box at the bottom of the page. The st.chat_message container displays a message with a user or assistant avatar. The st.write_stream function displays text as it is generated token by token, which works well with fast models because the user sees the answer start immediately.
+
+File upload
+The st.file_uploader widget lets users upload one or more files, such as PDFs and text files. The uploaded files are available as in-memory objects, so the application can read their bytes, load them with LangChain loaders and build a vector store dynamically for the current session.
+
+Caching
+Rebuilding expensive objects on every rerun would make the app slow. The st.cache_resource decorator stores objects such as an embedding model so they are created once and reused. This is important for responsiveness.
+
+Why Streamlit suits GenAI prototyping
+Streamlit lets developers focus on the AI logic, offers ready-made chat and upload widgets, supports quick iteration because the app reloads when the code changes, and is easy to deploy on Streamlit Community Cloud. Stakeholders can try a prototype in the browser instead of reading code, which speeds up feedback.

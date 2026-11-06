@@ -1,0 +1,7 @@
+REAL EXECUTION EVIDENCE PLACEHOLDER
+
+Run:
+python main.py
+
+Paste the actual terminal output here after testing OpenAI and/or Ollama.
+Do not invent responses.

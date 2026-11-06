@@ -1,0 +1,13 @@
+# Before mentor discussion
+
+I should be able to explain these points in my own words:
+
+1. A line plot is useful for seeing a trend over time.
+2. A scatter plot compares two numerical values.
+3. A bar chart compares categories.
+4. A stacked bar shows parts of a total.
+5. A histogram shows how numerical values are distributed.
+6. A pie chart shows category shares.
+7. The Superstore data has Order Date, Sales, Quantity, Region and Category.
+8. I used simple loops and dictionaries to add sales values.
+9. Task 4 uses the four years present in the dataset.

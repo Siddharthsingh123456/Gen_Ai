@@ -1,0 +1,33 @@
+# Assignment 12 - Revision Notes
+
+These notes are for my own preparation before the mentor discussion.
+
+## Dataset
+I used the Students Performance in Exams Kaggle dataset.
+
+Kaggle:
+https://www.kaggle.com/datasets/spscientist/students-performance-in-exams
+
+## Things I need to understand
+
+- relplot = figure-level relational plot
+- lineplot = line relationship
+- histplot = distribution using bins
+- kdeplot = smooth distribution estimate
+- rugplot = small marks showing individual observations
+- pairplot = pairwise relationships
+- heatmap = values displayed using a grid of colors
+- barplot = category compared with a numerical value
+- boxplot = median, quartiles and possible outliers
+- violinplot = distribution shape by category
+- countplot = count of observations in each category
+- regplot = relationship with a fitted regression line
+- FacetGrid = multiple panels based on a category
+- catplot = figure-level categorical plotting
+- displot = figure-level distribution plotting
+
+## My revision focus
+
+The mentor feedback said the earlier work looked too systematic. For this
+revision I focused on being able to explain each plot rather than adding
+extra formatting or advanced code.

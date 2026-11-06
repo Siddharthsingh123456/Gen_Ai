@@ -1,0 +1,47 @@
+MY RUN NOTES — Assignment 25
+=============================
+
+Date:
+Python version:
+OS:
+
+Task 1:
+- What did the formatted PromptTemplate look like?
+- What happened when I changed the question?
+
+Task 2:
+- What system and human messages were produced?
+
+Task 3:
+- What fields were present in the Pydantic schema?
+- What happened with an invalid confidence value?
+
+Task 4:
+- Describe the validation error you observed.
+
+Task 5:
+- Did the simple chain run?
+- What response did the model return?
+
+Task 6:
+- Which branch executed?
+- Why?
+
+Task 7:
+- What two outputs were produced in parallel?
+
+Task 8:
+- What did RunnablePassthrough + RunnableLambda do?
+
+Task 9:
+- How many chunks were created?
+- What did the retriever return?
+- What was the RAG answer?
+
+Task 10:
+Write three specific observations from your execution.
+
+Debugging:
+Write one genuine error and exactly how you fixed it.
+
+Do not invent API/model results.

@@ -1,0 +1,19 @@
+LangChain is a framework for building applications with language models.
+Prompt templates separate reusable instructions from changing user input.
+A simple chain connects a prompt to a model and then to an output parser.
+
+Pydantic models are useful for validating structured data returned by an application.
+A schema can require fields such as answer, confidence, and source.
+If a required field has the wrong type, Pydantic raises a validation error.
+
+Conditional chains are useful when different processing paths are needed.
+Parallel chains are useful when several pieces of information can be generated
+independently and combined into one final result.
+
+RunnablePassthrough keeps an input available while other runnable components process it.
+LCEL means LangChain Expression Language. It lets developers compose runnables with
+operators such as the pipe operator.
+
+RAG combines retrieval with generation. A retriever finds relevant document chunks,
+a prompt adds those chunks to the question, a language model generates an answer,
+and an output parser converts the model result into a usable format.

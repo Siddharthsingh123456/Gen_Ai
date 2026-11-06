@@ -1,0 +1,15 @@
+Suggested genuine tests
+
+OpenAI:
+1. What is Python?
+2. Explain variables.
+3. What is a list?
+4. Give one example of a loop.
+5. What did I ask you about in question 2?
+
+Ollama:
+Repeat the same five questions.
+
+For the follow-up question, verify that the model can use the stored conversation history.
+
+Save the actual responses in MY_RUN_NOTES.txt and outputs/cli_output.txt.

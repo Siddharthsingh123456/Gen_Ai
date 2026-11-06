@@ -1,0 +1,42 @@
+[
+  {
+    "id": "chunk_01",
+    "source": "sample.txt",
+    "text": "LangChain document loaders convert information from files and websites into Document objects."
+  },
+  {
+    "id": "chunk_02",
+    "source": "sample.txt",
+    "text": "Text splitting divides large documents into smaller pieces so retrieval systems can return focused context."
+  },
+  {
+    "id": "chunk_03",
+    "source": "sample.txt",
+    "text": "Chunk overlap keeps some text from one chunk in the next chunk and helps preserve context across boundaries."
+  },
+  {
+    "id": "chunk_04",
+    "source": "products.csv",
+    "text": "TextLoader loads plain text into Document objects."
+  },
+  {
+    "id": "chunk_05",
+    "source": "products.csv",
+    "text": "CSVLoader converts CSV rows into documents."
+  },
+  {
+    "id": "chunk_06",
+    "source": "products.csv",
+    "text": "PyPDFLoader loads PDF pages and page metadata."
+  },
+  {
+    "id": "chunk_07",
+    "source": "products.csv",
+    "text": "RecursiveCharacterTextSplitter creates chunks using natural separators."
+  },
+  {
+    "id": "chunk_08",
+    "source": "products.csv",
+    "text": "RAG retrieves relevant context before a language model generates an answer."
+  }
+]

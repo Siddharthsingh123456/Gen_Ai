@@ -1,0 +1,13 @@
+Groq provides fast inference for supported large language models.
+A Groq API key is normally supplied through the GROQ_API_KEY environment variable.
+
+FastAPI is a Python framework for building APIs. A POST endpoint can receive a
+JSON request body and return a JSON response. Pydantic models are useful for
+validating request and response data.
+
+Retrieval augmented generation, or RAG, retrieves relevant document chunks before
+generating an answer. The retrieved context can be inserted into a prompt so the
+answer is grounded in the supplied documents.
+
+For a backend service, environment variables should be used for API keys instead
+of hard-coding secrets in source files.

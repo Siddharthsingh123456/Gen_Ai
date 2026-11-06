@@ -1,0 +1,3 @@
+PDF pages: 1
+Extracted characters: 338
+Preview: Assignment 21 - LangChain PDF Sample This PDF contains real visible text for testing PyPDFLoader. LangChain can load the page into a Document object and expose the page content. Document loading is the first step. After loading, a text splitter can create smaller chunks suitable for retrieval system
