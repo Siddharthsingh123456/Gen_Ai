@@ -1,5 +1,0 @@
-langchain-core
-langchain-openai
-langchain-ollama
-python-dotenv
-streamlit
